@@ -1,16 +1,7 @@
-package thread.java;
-
 public class Test {
-  public static void main(String[] args) {
+    public static void main(String args[]){
+        String str = "Hello world";
+        System.out.println("the size of " + "the String is " + str.length());
 
-    Runnable myThread = () -> {
-
-      Thread.currentThread().setName("myThread");
-      System.out.println(Thread.currentThread().getName() + " is running");
-    };
-
-    Thread run = new Thread(myThread);
-
-    run.start();
-  }
+    }
 }
